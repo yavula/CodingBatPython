@@ -5,4 +5,27 @@ def string_times(str, n):
   
   
   
-# 
+# Warmup-2 > front_times
+
+def front_times(str, n):
+  f3=str[0:3]
+  return n*f3
+
+
+
+# Warmup-2 > string_bits
+
+def string_bits(str):
+  return str[::2]
+  
+  
+  
+ # Warmup-2 > string_splosion
+ 
+ def string_splosion(str):
+  es = ''
+  for i in range(len(str)+1):
+    es = es + str[:i]
+  return es
+  
+  # 
