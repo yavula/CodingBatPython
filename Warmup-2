@@ -28,6 +28,8 @@ def string_bits(str):
     es = es + str[:i]
   return es
   
+  
+  
  # Warmup-2 > last2
  
  def last2(str):
@@ -37,4 +39,47 @@ def string_bits(str):
     if(str[i]==l2[0] and str[i+1]==l2[1]):
       count=count+1
   return count
+ 
+ 
+ 
+ # Warmup-2 > array_count9
+ 
+ def array_count9(nums):
+  count=0
+  for i in nums:
+    if i==9:
+      count=count+1
+  return count
+
+
+
+# Warmup-2 > array_front9
+
+def array_front9(nums):
+  f4=nums[0:4]
+  for i in f4:
+    if(i==9):
+      return True
+  return False
   
+  
+  
+  # Warmup-2 > array123
+  
+  def array123(nums):
+  for i in range(len(nums)-2):
+    if(nums[i]==1 and nums[i+1]==2 and nums[i+2]==3):
+      return True
+  return False
+  
+  
+  
+  # Warmup-2 > string_match
+  
+  def string_match(a, b):
+  count=0
+  range_count=min(len(a),len(b))
+  for i in range(range_count-1):
+      if(a[i]==b[i] and a[i+1]==b[i+1]):
+        count=count+1
+  return count
