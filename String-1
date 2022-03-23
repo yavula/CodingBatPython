@@ -46,3 +46,47 @@ def first_two(str):
 
  
  
+# String-1 > first_half
+
+def first_half(str):
+  l=(len(str))/2
+  fh=str[0:l]
+  return fh
+  
+  
+  
+# String-1 > without_end
+
+def without_end(str):
+  return str[1:-1]
+
+
+
+# String-1 > combo_string
+
+def combo_string(a, b):
+  if(len(a)<len(b)):
+    return a+b+a
+  elif(len(b)<len(a)):
+    return b+a+b
+  else:
+    return ''
+    
+   
+   
+# String-1 > non_start
+
+def non_start(a, b):
+  s1=a[1:]
+  s2=b[1:]
+  return s1+s2
+  
+  
+ 
+ # String-1 > left2
+ 
+ def left2(str):
+  f2=str[:2]
+  rem=str[2:]
+  return rem+f2
+ 
