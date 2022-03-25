@@ -93,6 +93,8 @@ def middle_way(a, b):
   while(len(nums)>=1):
     return [nums[0],nums[-1]]
     
+    
+    
 # List-1 > has23
 
 def has23(nums):
