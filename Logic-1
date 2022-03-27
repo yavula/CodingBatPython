@@ -16,3 +16,27 @@ def cigar_party(cigars, is_weekend):
   
 # Logic-1 > date_fashion
 
+def date_fashion(you, date):
+  if(you in range(0,3) or date in range(0,3)):
+    return 0
+  elif(you in range(8,11) or date in range(8,11)):
+    return 2
+  else:
+    return 1
+
+
+
+# Logic-1 > squirrel_play
+
+def squirrel_play(temp, is_summer):
+  if(is_summer==True):
+    if(temp in range(60,101)):
+      return True
+    else:
+      return False
+  else:
+    if(temp in range(60,91)):
+      return True
+    else:
+      return False
+
