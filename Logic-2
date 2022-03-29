@@ -1,0 +1,54 @@
+#Logic-2 > make_bricks
+
+def make_bricks(small, big, goal):
+  if(big*5+small<goal):
+    return False
+  if(goal%5>small):
+    return False
+  else:
+    return True
+
+
+
+# Logic-2 > lone_sum
+
+def lone_sum(a, b, c):
+  if a == b == c:
+    return 0
+  elif(a==b):
+    return c
+  elif(b==c):
+    return a
+  elif(a==c):
+    return b
+  else:
+    return a+b+c
+    
+
+
+# Logic-2 > lucky_sum
+
+def lucky_sum(a, b, c):
+  if(a==13):
+    return 0
+  elif (b==13):
+    return a
+  elif(c==13):
+    return a+b
+  else:
+    return a+b+c
+
+
+
+# Logic-2 > no_teen_sum
+
+def no_teen_sum(a, b, c):
+  return fix_teen(a)+fix_teen(b)+fix_teen(c)
+  
+def fix_teen(n):
+  if n in [13,14,17,18,19]:
+    return 0
+  else:
+    return n
+
+
