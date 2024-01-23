@@ -1,4 +1,4 @@
-double_char
+# String-2 > double_char
 
 def double_char(str):
   s=''
