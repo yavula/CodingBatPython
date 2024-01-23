@@ -59,10 +59,11 @@ def reverse3(nums):
 # List-1 > max_end3
 
 def max_end3(nums):
-  if nums[0]>nums[2]:
-    return [nums[0],nums[0],nums[0]]
-  else:
-    return [nums[2],nums[2],nums[2]]
+  m = max(nums[0], nums[-1])
+  empty_list=[]
+  for i in range(len(nums)):
+    empty_list.append(m)
+  return empty_list
 
 
 
