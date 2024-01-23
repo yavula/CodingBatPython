@@ -6,3 +6,27 @@ def double_char(str):
     s=s+i*2
   return s
 
+String-2 > count_hi
+
+def count_hi(str):
+  c=0
+  for i in range(len(str)-1):
+    if(str[i]=='h' and str[i+1]=='i'):
+      c=c+1
+  return c
+
+String-2 > cat_dog
+
+def cat_dog(str):
+  dc = 0
+  cc =0
+  for i in range(len(str)-2):
+    if(str[i]=='d' and str[i+1]=='o' and str[i+2]=='g'):
+      dc=dc+1
+    if(str[i]=='c' and str[i+1]=='a' and str[i+2]=='t'):
+      cc=cc+1
+  if dc==cc:
+    return True
+  else:
+    return False
+
