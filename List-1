@@ -82,10 +82,7 @@ def sum2(nums):
 # List-1 > middle_way
 
 def middle_way(a, b):
-  am=a[1]
-  bm=b[1]
-  return [am,bm]
- 
+  return [a[1],b[1]]
  
  
  # List-1 > make_ends
